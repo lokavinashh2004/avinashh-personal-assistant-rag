@@ -1,0 +1,638 @@
+[
+  {
+    "id": 0,
+    "text": "T. Lok Avinashh is an innovative and results-driven Artificial Intelligence and Data Science student currently pursuing a B.Tech at Prince Dr. K. Vasudevan College of Engineering and Technology. Guided by an insatiable curiosity for technology and its capacity to solve real-world challenges, Avinashh has established himself as a well-rounded technologist, combining deep technical knowledge with creative design and problem-solving acumen. His journey in the world of AI is defined by a passion for turning ideas into intelligent systems that empower people and make technology more accessible, inclusive, and meaningful. From the early days of his academic career, Avinashh demonstrated an analytical mindset and a natural inclination toward data-driven reasoning. His educational foundation in science and mathematics from Prince Srivari Senior Secondary School laid the groundwork for his technical pursuits. As he transitioned into higher education, he quickly immersed himself in advanced courses such as Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, and Natural Language Processing. These subjects not only strengthened his understanding of modern computational paradigms but also inspired him to explore interdisciplinary applications of AI in healthcare, education, and automation. At his core, Avinashh is a builder and problem-solver. He thrives at the intersection of software engineering and artificial intelligence, possessing strong expertise across multiple domains including machine learning, deep learning, natural language processing, data analysis, web development, and cloud computing. His technical proficiency spans a broad stack of languages and tools — Python, JavaScript, Java, MySQL, MongoDB, TensorFlow, PyTorch, Keras, Flask, React, and Google Cloud — all of which he uses to craft intelligent systems that learn, adapt, and scale effectively. Among his most impactful projects, the “Signify App” stands out as a socially driven innovation. Developed as part of the Smart India Hackathon (SIH), the application leverages TensorFlow and OpenCV to translate sign"
+  },
+  {
+    "id": 1,
+    "text": "Cloud — all of which he uses to craft intelligent systems that learn, adapt, and scale effectively. Among his most impactful projects, the “Signify App” stands out as a socially driven innovation. Developed as part of the Smart India Hackathon (SIH), the application leverages TensorFlow and OpenCV to translate sign language into text in real time with over 90% accuracy. Designed to enhance the learning experience for deaf and mute students, this initiative represents Avinashh’s belief that technology should serve humanity. His leadership in developing accessible educational tools demonstrates not only technical mastery but also empathy and social awareness — qualities that define him as a next-generation AI engineer. Equally impressive is his work on the Virtual Pharmacy, an AI-powered platform that recommends medicines based on disease analysis and symptom inputs. The system integrates Flask, machine learning models, and a responsive web interface, allowing users to access pharmaceutical insights without requiring medical expertise. By merging intelligent automation with user-centric design, Avinashh once again showcased his ability to bring real-world value through technical ingenuity. Another notable contribution is his participation in the GDG Hackathon, where he developed an AI-based ECG analysis system capable of detecting potential heart conditions. This project reflects his interest in healthcare innovation and his skill in designing deep learning pipelines that analyze medical data with precision. Complementing these efforts is his ongoing development of a blockchain-integrated crowdfunding platform, which aims to enable transparent and secure lending and borrowing — a step toward ethical fintech solutions. Throughout his academic journey, Avinashh has also gained valuable industry exposure through his role as a Backend Engineer Intern at Elimai.ai (EMCEE Technologies), a healthcare-focused AI startup. There, he contributed to building and optimizing backend systems that support data-driven healthcare automation. This experience enhanced his understanding of scalable architecture, API development, and"
+  },
+  {
+    "id": 2,
+    "text": "academic journey, Avinashh has also gained valuable industry exposure through his role as a Backend Engineer Intern at Elimai.ai (EMCEE Technologies), a healthcare-focused AI startup. There, he contributed to building and optimizing backend systems that support data-driven healthcare automation. This experience enhanced his understanding of scalable architecture, API development, and the integration of machine learning models into production environments — essential skills for any aspiring AI professional. His technical accomplishments are further validated by multiple certifications, including the Google Cloud Gen AI Certificate, AI & Machine Learning Specialization (2023), and participation in the Sathyabama University International Data Science Workshop. These credentials highlight his commitment to continuous learning and staying ahead in a rapidly evolving technological landscape. Beyond technical expertise, Avinashh is recognized for his leadership and collaborative spirit. As a Tech Lead for Google Developer Groups, he has led peer teams in organizing workshops, developing web solutions, and fostering a community of learners passionate about open-source and AI innovation. His ability to guide, inspire, and execute projects underlines his potential not only as an engineer but also as a leader capable of driving impactful change. Avinashh’s achievements extend to competitive arenas as well. He has earned second place at the St. Joseph College AI Competition (2023) and third place in a Front-End Development Competition at Sairam College (2022). These recognitions testify to his balanced excellence in both backend logic and UI/UX design — rare versatility that allows him to create systems that are not only functional but also aesthetically refined. He has also designed several college and departmental websites, leveraging his creative intuition to enhance accessibility and user experience. His interests reach beyond traditional AI domains. A passionate 3D modeler and animator, Avinashh enjoys crafting realistic visualizations using Blender, merging art and technology in a way that enhances the appeal"
+  },
+  {
+    "id": 3,
+    "text": "He has also designed several college and departmental websites, leveraging his creative intuition to enhance accessibility and user experience. His interests reach beyond traditional AI domains. A passionate 3D modeler and animator, Avinashh enjoys crafting realistic visualizations using Blender, merging art and technology in a way that enhances the appeal of his AI-driven interfaces. He also engages in robotics, cloud computing, and competitive programming, constantly challenging himself to push technical boundaries and innovate across diverse disciplines. What sets Lok Avinashh apart is his holistic vision — he doesn’t view AI merely as a collection of algorithms but as a transformative medium for human progress. Whether through building AI systems for medical diagnostics, accessibility solutions for differently-abled individuals, or web platforms that democratize knowledge, he consistently seeks to humanize technology. This perspective, grounded in empathy and purpose, defines his long-term ambition: to become a pioneering AI innovator and entrepreneur who creates products that positively shape society. His personal life, too, reflects balance and groundedness. Supported by his wife, Harisha, Avinashh finds inspiration and motivation in their shared journey, which fuels his determination to excel both personally and professionally. This emotional intelligence complements his technical intellect, enabling him to connect deeply with people and design experiences that resonate beyond code. In every project, competition, or collaboration, Lok Avinashh brings a unique combination of curiosity, diligence, and resilience. He embodies the modern spirit of innovation — a student today, a creator tomorrow, and a changemaker in the making. His story so far is not just about mastering technology but about envisioning a future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital"
+  },
+  {
+    "id": 4,
+    "text": "not just about mastering technology but about envisioning a future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 5,
+    "text": "just about mastering technology but about envisioning a future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 6,
+    "text": "about mastering technology but about envisioning a future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 7,
+    "text": "mastering technology but about envisioning a future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 8,
+    "text": "technology but about envisioning a future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 9,
+    "text": "but about envisioning a future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 10,
+    "text": "about envisioning a future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 11,
+    "text": "envisioning a future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 12,
+    "text": "a future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 13,
+    "text": "future where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 14,
+    "text": "where artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 15,
+    "text": "artificial intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 16,
+    "text": "intelligence works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 17,
+    "text": "works hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 18,
+    "text": "hand-in-hand with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 19,
+    "text": "with human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 20,
+    "text": "human compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 21,
+    "text": "compassion. As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 22,
+    "text": "As he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 23,
+    "text": "he continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 24,
+    "text": "continues to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 25,
+    "text": "to explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 26,
+    "text": "explore new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 27,
+    "text": "new frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 28,
+    "text": "frontiers in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 29,
+    "text": "in AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 30,
+    "text": "AI, deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 31,
+    "text": "deep learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 32,
+    "text": "learning, and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 33,
+    "text": "and full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 34,
+    "text": "full-stack development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 35,
+    "text": "development, one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 36,
+    "text": "one thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 37,
+    "text": "thing remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 38,
+    "text": "remains certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 39,
+    "text": "certain: his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 40,
+    "text": "his journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 41,
+    "text": "journey is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 42,
+    "text": "is only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 43,
+    "text": "only beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 44,
+    "text": "beginning, and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 45,
+    "text": "and his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 46,
+    "text": "his impact will extend far beyond the digital world."
+  },
+  {
+    "id": 47,
+    "text": "impact will extend far beyond the digital world."
+  },
+  {
+    "id": 48,
+    "text": "will extend far beyond the digital world."
+  },
+  {
+    "id": 49,
+    "text": "extend far beyond the digital world."
+  },
+  {
+    "id": 50,
+    "text": "far beyond the digital world."
+  },
+  {
+    "id": 51,
+    "text": "beyond the digital world."
+  },
+  {
+    "id": 52,
+    "text": "the digital world."
+  },
+  {
+    "id": 53,
+    "text": "digital world."
+  },
+  {
+    "id": 54,
+    "text": "world."
+  },
+  {
+    "id": 0,
+    "text": "T.Lok Avinashh Artificial Intelligence & Data Science Student https://lokavinashhhportfolio.netlify.app/ lokavinashh2004@gmail.com (cid:211) +91-9345437336 linkedin.com/in/lokavinashh (cid:135) github.com/lokavinashh2004 EXECUTIVE SUMMARY Innovative and results-driven Artificial Intelligence & Data Science student with a strong foundation in machine learning, deep learning, and full-stack development. Proven ability to design and deploy AI-driven applications, 3D modeling solutions, and scalable web platforms. Recognized for leadership, technical expertise, and im- pactful contributions in competitive and collaborative environments. Passionate about leveraging cutting-edge technologies to solve real-world problems. EDUCATION Prince Dr.K.Vasudevan College Of Engineering And Technology B.Tech in Artificial Intelligence & Data Science Expected Graduation: 2026 CGPA: 7.96 RelevantCoursework: MachineLearning,DeepLearning,DataStructures,Algorithms,WebDevelopment,AppDevelop- ment, Natural Language Processing. Prince Srivari Senior Secondary School Higher Secondary Education Graduation: 2022 Completed Higher Secondary Education with a strong foundation in Science and Mathematics, fostering analytical and problem-solving skills. TECHNICAL SKILLS • Programming Languages: Python,JavaScript,Java,MySQL,PostgreSQL,MongoDB,HTML/CSS,Next.js,React, Firebase, MERN, AWS • Frameworks & Libraries: TensorFlow, PyTorch, Keras, OpenCV, React.js, Flask • Tools & Platforms: Git, Docker, VS Code, Jupyter Notebook, Blender, Tableau, Google Cloud • Technical Expertise: Machine Learning, Deep Learning, Data Analysis, Web Development, AI Model Development, Cloud Computing, Natural Language Processing, Computer Vision PROJECTS Signify App Developed an AI-powered sign language translation application using TensorFlow and OpenCV. Achieved real-time con- version of sign language to text with 90% accuracy. On-Progress Virtual Pharmacy DevelopedanAI-poweredvirtualpharmacysystemthatsuggestsmedicinesbasedoninputsymptomsanddiseaseanalysis. https://virtual-pharmacy.onrender.com/ AI-Powered ECG Analysis (GDG Hackathon) Designed and implemented a deep learning model for ECG analysis to detect potential heart conditions. On-Progress Crowdfunding Platform Developed a crowdfunding platform where users can lend and borrow money securely using blockchain integration. On- Progress INTERNSHIPS Elimai.ai (EMCEE Technologies) – Backend Engineer Intern Contributing to backend system for a ai related healthcare based startup. 2025 CERTIFICATIONS • Google Cloud Gen AI Certificate 2023 • 3-Day App Development Workshop 2023 • Data Science Workshop Satyabama University, 2023 • AI & Machine Learning"
+  },
+  {
+    "id": 1,
+    "text": "blockchain integration. On- Progress INTERNSHIPS Elimai.ai (EMCEE Technologies) – Backend Engineer Intern Contributing to backend system for a ai related healthcare based startup. 2025 CERTIFICATIONS • Google Cloud Gen AI Certificate 2023 • 3-Day App Development Workshop 2023 • Data Science Workshop Satyabama University, 2023 • AI & Machine Learning Specialization 2023 ACHIEVEMENTS • 2nd Place - St. Joseph College AI Competition 2023 • Frontend Development Competition at Sairam College (3rd Place) 2022 • Led an AI-based Learning Initiative for deaf and mute students, creating accessible educational tools. LEADERSHIP & ACTIVITIES • Google Developer Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 2,
+    "text": "accessible educational tools. LEADERSHIP & ACTIVITIES • Google Developer Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 3,
+    "text": "educational tools. LEADERSHIP & ACTIVITIES • Google Developer Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 4,
+    "text": "tools. LEADERSHIP & ACTIVITIES • Google Developer Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 5,
+    "text": "LEADERSHIP & ACTIVITIES • Google Developer Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 6,
+    "text": "& ACTIVITIES • Google Developer Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 7,
+    "text": "ACTIVITIES • Google Developer Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 8,
+    "text": "• Google Developer Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 9,
+    "text": "Google Developer Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 10,
+    "text": "Developer Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 11,
+    "text": "Groups - Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 12,
+    "text": "- Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 13,
+    "text": "Tech Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 14,
+    "text": "Lead 2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 15,
+    "text": "2022–Present • Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 16,
+    "text": "• Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 17,
+    "text": "Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 18,
+    "text": "(UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 19,
+    "text": "and Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 20,
+    "text": "Developed (HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 21,
+    "text": "(HTML, CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 22,
+    "text": "CSS, JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 23,
+    "text": "JS) for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 24,
+    "text": "for college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 25,
+    "text": "college websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 26,
+    "text": "websites and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 27,
+    "text": "and mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 28,
+    "text": "mobile applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 29,
+    "text": "applications, enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 30,
+    "text": "enhancing user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 31,
+    "text": "user experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 32,
+    "text": "experience and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 33,
+    "text": "and accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 34,
+    "text": "accessibility. INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 35,
+    "text": "INTERESTS Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 36,
+    "text": "Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 37,
+    "text": "Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 38,
+    "text": "Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 39,
+    "text": "3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 40,
+    "text": "Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 41,
+    "text": "& Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 42,
+    "text": "Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 43,
+    "text": "Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 44,
+    "text": "Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 45,
+    "text": "Robotics, Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 46,
+    "text": "Competitive Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 47,
+    "text": "Programming, Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 48,
+    "text": "Cloud Computing (Google Cloud)"
+  },
+  {
+    "id": 49,
+    "text": "Computing (Google Cloud)"
+  },
+  {
+    "id": 50,
+    "text": "(Google Cloud)"
+  },
+  {
+    "id": 51,
+    "text": "Cloud)"
+  },
+  {
+    "id": 0,
+    "text": "PAGE 1: TECHNICAL SKILLS TECHNICAL_SKILLS_START Programming_Languages: Python, JavaScript, Java, MySQL, PostgreSQL, MongoDB, HTML/CSS, Next.js, React, Firebase, MERN, AWS Frameworks_and_Libraries: TensorFlow, PyTorch, Keras, OpenCV, React.js, Flask Tools_and_Platforms: Git, Docker, VS Code, Jupyter Notebook, Blender, Tableau, Google Cloud Technical_Expertise: Machine Learning, Deep Learning, Data Analysis, Web Development, AI Model Development, Cloud Computing, Natural Language Processing, Computer Vision TECHNICAL_SKILLS_END PAGE 2: PROJECTS AND RESEARCH PROJECTS_START PROJECT: Signify App DESCRIPTION: Developed an AI-powered sign language translation application using TensorFlow and OpenCV. Achieved real-time conversion of sign language to text with 90% accuracy. STATUS: On-Progress TECHNOLOGIES: TensorFlow, OpenCV, Python, Flask, React LINK: None PROJECT: Virtual Pharmacy DESCRIPTION: Developed an AI-powered virtual pharmacy system that suggests medicines based on input symptoms and disease analysis. STATUS: Live TECHNOLOGIES: Python, NLP, Web Development, Render LINK: https://virtual-pharmacy.onrender.com/ PROJECT: AI-Powered ECG Analysis (GDG Hackathon) DESCRIPTION: Designed and implemented a deep learning model for ECG analysis to detect potential heart conditions. STATUS: On-Progress TECHNOLOGIES: Deep Learning, CNN, Python, TensorFlow LINK: None PROJECT: Shravan – Speech-to-Text Web App DESCRIPTION: Built from scratch during internship at Elimai.ai. The system transcribes customer–sales executive call recordings and provides insights such as points of improvement, sales pitch analysis, and conversational effectiveness. STATUS: Completed TECHNOLOGIES: Python, Speech-to-Text, NLP, Web App, Elimai.ai YEAR: 2025 PROJECT: Apollo Spectra – Process Automation DESCRIPTION: Contributed to a production-level automation system at Elimai.ai that streamlines plotting values into Excel, reducing manual effort and increasing efficiency. STATUS: Completed TECHNOLOGIES: Python, Excel Automation, Elimai.ai YEAR: 2025 PROJECTS_END PAGE 3: ACHIEVEMENTS ACHIEVEMENTS_START ACHIEVEMENT: 2nd Place - St. Joseph College AI Competition YEAR: 2023 DESCRIPTION: Secured 2nd position in national-level AI competition. ACHIEVEMENT: 3rd Place - Frontend Development Competition at Sairam College YEAR: 2022 DESCRIPTION: Achieved 3rd place in frontend development championship. ACHIEVEMENT: Led AI-based Learning Initiative for deaf and mute students DESCRIPTION: Created accessible educational"
+  },
+  {
+    "id": 1,
+    "text": "- St. Joseph College AI Competition YEAR: 2023 DESCRIPTION: Secured 2nd position in national-level AI competition. ACHIEVEMENT: 3rd Place - Frontend Development Competition at Sairam College YEAR: 2022 DESCRIPTION: Achieved 3rd place in frontend development championship. ACHIEVEMENT: Led AI-based Learning Initiative for deaf and mute students DESCRIPTION: Created accessible educational tools using AI and 3D modeling. IMPACT: Trained 200+ students across 3 schools. CERTIFICATION: Google Cloud Gen AI Certificate YEAR: 2023 ISSUER: Google Cloud CERTIFICATION: 3-Day App Development Workshop YEAR: 2023 ISSUER: External Workshop CERTIFICATION: Data Science Workshop YEAR: 2023 ISSUER: Satyabama University CERTIFICATION: AI & Machine Learning Specialization YEAR: 2023 ISSUER: Online Platform ACHIEVEMENTS_END PAGE 4: EXPERIENCE AND INTERESTS EXPERIENCE_START ROLE: Backend Engineer Intern COMPANY: Elimai.ai (EMCEE Technologies) DURATION: 2025 – Present RESPONSIBILITIES: - Contributed to backend system for an AI-related healthcare-based startup. - Worked on live projects including Shravan (Speech-to-Text Web App) and Apollo Spectra (Process Automation System). TECHNOLOGIES: Python, FastAPI, PostgreSQL, AWS, Docker LEADERSHIP: Google Developer Groups - Tech Lead DURATION: 2022 – Present ACTIVITIES: - Designed (UI/UX) and Developed (HTML, CSS, JS) for college websites and mobile applications. - Enhanced user experience and accessibility. - Organized 15+ technical workshops. INTERESTS_START Artificial Intelligence Research, 3D Modeling & Animation, Web Development, Robotics, Competitive Programming, Cloud Computing (Google Cloud) INTERESTS_END EDUCATION: INSTITUTION: Prince Dr.K.Vasudevan College Of Engineering And Technology DEGREE: B.Tech in Artificial Intelligence & Data Science CGPA: 7.96 EXPECTED_GRADUATION: 2026 COURSEWORK: Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 2,
+    "text": "& Data Science CGPA: 7.96 EXPECTED_GRADUATION: 2026 COURSEWORK: Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 3,
+    "text": "Data Science CGPA: 7.96 EXPECTED_GRADUATION: 2026 COURSEWORK: Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 4,
+    "text": "Science CGPA: 7.96 EXPECTED_GRADUATION: 2026 COURSEWORK: Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 5,
+    "text": "CGPA: 7.96 EXPECTED_GRADUATION: 2026 COURSEWORK: Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 6,
+    "text": "7.96 EXPECTED_GRADUATION: 2026 COURSEWORK: Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 7,
+    "text": "EXPECTED_GRADUATION: 2026 COURSEWORK: Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 8,
+    "text": "2026 COURSEWORK: Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 9,
+    "text": "COURSEWORK: Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 10,
+    "text": "Machine Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 11,
+    "text": "Learning, Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 12,
+    "text": "Deep Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 13,
+    "text": "Learning, Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 14,
+    "text": "Data Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 15,
+    "text": "Structures, Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 16,
+    "text": "Algorithms, Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 17,
+    "text": "Web Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 18,
+    "text": "Development, App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 19,
+    "text": "App Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 20,
+    "text": "Development, Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 21,
+    "text": "Natural Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 22,
+    "text": "Language Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 23,
+    "text": "Processing INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 24,
+    "text": "INSTITUTION: Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 25,
+    "text": "Prince Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 26,
+    "text": "Srivari Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 27,
+    "text": "Senior Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 28,
+    "text": "Secondary School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 29,
+    "text": "School DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 30,
+    "text": "DEGREE: Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 31,
+    "text": "Higher Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 32,
+    "text": "Secondary Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 33,
+    "text": "Education GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 34,
+    "text": "GRADUATION: 2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 35,
+    "text": "2022 FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 36,
+    "text": "FOCUS: Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 37,
+    "text": "Science and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 38,
+    "text": "and Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 39,
+    "text": "Mathematics CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 40,
+    "text": "CONTACT: EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 41,
+    "text": "EMAIL: lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 42,
+    "text": "lokavinashh2004@gmail.com PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 43,
+    "text": "PHONE: +91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 44,
+    "text": "+91-9345437336 PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 45,
+    "text": "PORTFOLIO: https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 46,
+    "text": "https://lokavinashhhportfolio.netlify.app/ LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 47,
+    "text": "LINKEDIN: linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 48,
+    "text": "linkedin.com/in/lokavinashh GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 49,
+    "text": "GITHUB: github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 50,
+    "text": "github.com/lokavinashh2004 EXPERIENCE_END"
+  },
+  {
+    "id": 51,
+    "text": "EXPERIENCE_END"
+  }
+]

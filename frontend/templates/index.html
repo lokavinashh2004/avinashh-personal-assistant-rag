@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Avinashh Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="whatsapp-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <div class="header-avatar">
+                <div class="avatar">👤</div>
+            </div>
+            <div class="header-info">
+                <div class="contact-name">Avinashh Assistant</div>
+                <div class="contact-status">online</div>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn" title="Search">🔍</button>
+                <button class="icon-btn" title="Menu">⋮</button>
+            </div>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div id="chat-messages" class="chat-messages">
+            <div class="welcome-message">
+                <div class="welcome-avatar">👤</div>
+                <div class="welcome-text">
+                    <p>Hello! 👋</p>
+                    <p>I'm here to help you learn about Avinashh. Ask me anything about his resume, skills, experience, or background!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div id="typing-indicator" class="typing-indicator" style="display: none;">
+            <div class="typing-bubble">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-area">
+            <button class="attach-btn" title="Attach">📎</button>
+            <div class="input-wrapper">
+                <input 
+                    type="text" 
+                    id="message-input" 
+                    class="message-input"
+                    placeholder="Type a message..." 
+                    autocomplete="off"
+                    disabled
+                />
+            </div>
+            <button id="send-btn" class="send-btn" disabled title="Send">
+                <span class="send-icon">➤</span>
+            </button>
+        </div>
+
+        <!-- Connection Status (hidden by default) -->
+        <div id="connection-status" class="connection-status" style="display: none;"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>
