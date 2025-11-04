@@ -7,7 +7,7 @@ services:
       cd frontend/react-app &&
       npm install &&
       npm run build
-    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 4 wsgi:application
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 2 --timeout 120 wsgi:application
     envVars:
       - key: GROQ_API_KEY
         sync: false
