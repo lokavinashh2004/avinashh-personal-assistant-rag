@@ -12,8 +12,9 @@ sys.path.insert(0, parent_dir)
 
 from backend.api import app
 
-# For Gunicorn compatibility
+# For Gunicorn compatibility - export both app and application
 application = app
+app = app  # Explicitly make app available at module level
 
 if __name__ == "__main__":
     try:

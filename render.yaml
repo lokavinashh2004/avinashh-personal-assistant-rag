@@ -7,7 +7,7 @@ services:
       cd frontend/react-app &&
       npm install &&
       npm run build
-    startCommand: gunicorn --bind 0.0.0.0:$PORT backend.app:app
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --pythonpath . backend.app:application
     envVars:
       - key: GROQ_API_KEY
         sync: false
