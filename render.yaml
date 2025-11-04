@@ -7,13 +7,11 @@ services:
       cd frontend/react-app &&
       npm install &&
       npm run build
-    startCommand: gunicorn --bind 0.0.0.0:$PORT --pythonpath . backend.app:application
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 4 wsgi:application
     envVars:
       - key: GROQ_API_KEY
         sync: false
         required: true
-      - key: PYTHON_VERSION
-        value: 3.11.0
     plan: free
     region: oregon
 
