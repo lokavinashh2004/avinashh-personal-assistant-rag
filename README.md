@@ -1,182 +1,326 @@
-# RAG Assistant - Avinashh Resume Chatbot
+# 🤖 Avinashh Personal Assistant - RAG Chatbot
 
-A Retrieval-Augmented Generation (RAG) system that allows you to ask questions about Avinashh's resume using natural language.
+A modern, intelligent personal assistant powered by Retrieval-Augmented Generation (RAG) that answers questions about Lok Avinashh's professional background, skills, and experience. Built with Flask, React, and Groq AI.
 
-## 🏗️ Project Structure
+![WhatsApp-Style Chat Interface](https://img.shields.io/badge/UI-WhatsApp_Style-25D366?style=for-the-badge&logo=whatsapp)
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Flask](https://img.shields.io/badge/Flask-2.0+-000000?style=for-the-badge&logo=flask&logoColor=white)
+
+## ✨ Features
+
+- 💬 **WhatsApp-Style Chat Interface** - Modern, responsive UI with real-time messaging
+- 📄 **Resume PDF Preview** - Beautiful document card with one-click download
+- 🧠 **Intelligent RAG System** - Retrieves relevant context from resume to answer questions
+- ⚡ **Fast Responses** - Powered by Groq's lightning-fast LLM API
+- 🎯 **Smart Greeting Detection** - Proactively offers resume on greeting
+- 🔍 **Semantic Search** - Uses FAISS vector similarity search for accurate retrieval
+- 🌐 **Production Ready** - Deployable to Render, Heroku, or any cloud platform
+
+## 🏗️ Architecture
 
 ```
-Avinashh-RAG/
-├── backend/              # Backend Python code
-│   ├── __init__.py
-│   ├── app.py            # Main application entry point
-│   ├── api.py            # Flask server and API endpoints
-│   ├── index_documents.py # Document indexing script
-│   ├── rag_utils.py      # RAG retrieval and prompt building
-│   └── serve_models.py   # LLM model integration (Groq API)
-├── frontend/             # Frontend files
-│   ├── templates/        # HTML templates (Flask)
-│   │   └── index.html   # Main chat interface
-│   └── static/          # Static files (CSS, JS)
-│       ├── css/
-│       │   └── style.css # WhatsApp-style styling
-│       └── js/
-│           └── chat.js   # Frontend JavaScript
-├── data/                 # Documents to index (PDFs, TXT, MD)
+┌─────────────┐      ┌──────────────┐      ┌─────────────┐
+│   React     │─────▶│    Flask     │─────▶│   Groq AI   │
+│  Frontend   │      │   Backend    │      │     LLM     │
+└─────────────┘      └──────────────┘      └─────────────┘
+                            │
+                            ▼
+                     ┌──────────────┐
+                     │    FAISS     │
+                     │ Vector Index │
+                     └──────────────┘
+```
+
+## 📁 Project Structure
+
+```
+avinash-personal-assistant-rag/
+├── backend/                    # Flask backend
+│   ├── api.py                 # API endpoints & server
+│   ├── app.py                 # Application entry point
+│   ├── index_documents.py     # Document indexing script
+│   ├── rag_utils.py           # RAG retrieval logic
+│   └── serve_models.py        # Groq LLM integration
+├── frontend/
+│   ├── react-app/             # React source code
+│   │   ├── src/
+│   │   │   ├── App.jsx        # Main app component
+│   │   │   ├── components/    # UI components
+│   │   │   └── App.css        # Styling
+│   │   └── package.json
+│   └── static/                # Built React app (production)
+├── data/                      # Source documents
 │   └── resume.pdf
-├── embeddings/           # Generated vector index files
-│   ├── resume.index     # FAISS vector index
-│   └── resume_meta.json # Metadata for indexed chunks
-├── venv/                # Python virtual environment
-├── requirements.txt     # Python dependencies
-├── start_server.bat     # Windows batch script to start server
-├── start_server.ps1     # PowerShell script to start server
-└── README.md           # This file
+├── embeddings/                # Generated vector index
+│   ├── resume.index           # FAISS index
+│   └── resume_meta.json       # Chunk metadata
+├── resume/                    # Resume files for download
+│   └── T_Lok_Avinashh Resume.pdf
+├── requirements.txt           # Python dependencies
+├── runtime.txt                # Python version (for deployment)
+├── Procfile                   # Deployment config
+└── README.md                  # This file
 ```
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-1. **Python 3.8+**
-2. **Groq API Key** - Get from https://console.groq.com
+- **Python 3.8+** ([Download](https://www.python.org/downloads/))
+- **Node.js 16+** (for frontend development)
+- **Groq API Key** ([Get one free](https://console.groq.com))
 
 ### Installation
 
-1. **Clone or navigate to the project directory**
-
-2. **Create and activate virtual environment** (if not already done)
-   ```powershell
-   python -m venv venv
-   .\venv\Scripts\Activate.ps1  # Windows PowerShell
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd avinash-personal-assistant-rag
    ```
 
-3. **Install dependencies**
-   ```powershell
+2. **Set up Python environment**
+   ```bash
+   python -m venv venv
+   
+   # Windows
+   .\venv\Scripts\Activate.ps1
+   
+   # macOS/Linux
+   source venv/bin/activate
+   ```
+
+3. **Install Python dependencies**
+   ```bash
    pip install -r requirements.txt
    ```
 
-4. **Index documents**
-   ```powershell
+4. **Configure API Key**
+   
+   Create a `.env` file in the `backend/` directory:
+   ```env
+   GROQ_API_KEY=your_groq_api_key_here
+   ```
+
+5. **Index documents** (First time only)
+   ```bash
    python backend/index_documents.py
    ```
-   This reads all PDFs/text files from `data/` and creates the vector index.
+   This creates the vector index from documents in `data/`
 
-5. **Start the server**
-   ```powershell
+6. **Start the server**
+   ```bash
    python backend/app.py
    ```
+   
    Or use the convenience scripts:
-   ```powershell
-   .\start_server.ps1    # PowerShell
-   .\start_server.bat    # Command Prompt
-   ```
-   Server runs on `http://localhost:7860`
-
-6. **Open in browser**
-   Navigate to: `http://localhost:7860`
-
-## 📝 Usage
-
-1. **Start the backend server**
-   ```powershell
-   python src/backend.py
+   ```bash
+   # Windows PowerShell
+   .\start_server.ps1
+   
+   # Windows Command Prompt
+   .\start_server.bat
    ```
 
-2. **Access the web interface**
-   - Open `http://localhost:7860` in your browser
-   - The modern UI will load automatically
+7. **Open in browser**
+   
+   Navigate to: **http://localhost:7860**
 
-3. **Ask questions**
-   - Type questions about the resume content
-   - Examples:
-     - "What skills does Avinashh have?"
-     - "Tell me about Avinashh's experience"
-     - "What is Avinashh's education background?"
+## � Development
 
-## 🔧 Configuration
+### Frontend Development
 
-### Changing the LLM Model
+The frontend is a React app built with Vite.
 
-Edit `backend/serve_models.py` to change the Groq model:
-```python
-GROQ_MODEL = "llama-3.1-70b-versatile"  # Change to your preferred Groq model
+```bash
+cd frontend/react-app
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-### Adjusting Retrieval
+The production build is automatically copied to `frontend/static/` for Flask to serve.
 
-Edit `src/rag_utils.py` to change:
-- Number of retrieved contexts: `top_k=3` in `retrieve()` function
-- Embedding model: `"all-MiniLM-L6-v2"` in `SentenceTransformer()`
+### Backend Development
 
-### Adjusting Chunking
+The backend uses Flask with the following endpoints:
 
-Edit `src/index_documents.py`:
-- Chunk size: `chunk_size=300` in `chunk_text()`
-- Overlap: `overlap=50` in `chunk_text()`
-
-## 🔌 API Endpoints
-
-- `GET /` - Main web interface
-- `POST /chat` - Send a question and get an answer
-  ```json
-  {
-    "question": "What skills does Avinashh have?"
-  }
-  ```
-  Response:
-  ```json
-  {
-    "answer": "Based on the resume, Avinashh has..."
-  }
-  ```
-- `GET /health` - Health check endpoint
-
-## 🛠️ Development
-
-### Project Structure Explained
-
-- **Backend (Flask)**: Serves the web interface and handles API requests
-- **RAG Pipeline**: 
-  1. User asks a question
-  2. Question is embedded using Sentence Transformers
-  3. Similar chunks are retrieved from FAISS index
-  4. Context is built into a prompt
-  5. LLM (Groq API) generates an answer
-- **Frontend**: Modern, responsive chat interface with real-time updates
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/` | GET | Serves React app |
+| `/chat` | POST | Handles chat messages |
+| `/health` | GET | Health check |
+| `/resume/<filename>` | GET | Serves resume PDF |
 
 ### Adding New Documents
 
-1. Place PDF, TXT, or MD files in the `data/` folder
-2. Re-run indexing: `python src/index_documents.py`
-3. The new content will be searchable immediately
+1. Place PDF, TXT, or MD files in `data/` folder
+2. Re-run indexing:
+   ```bash
+   python backend/index_documents.py
+   ```
+3. Restart the server
 
-## 📦 Dependencies
+## 🎨 Features in Detail
 
-- **flask**: Web framework
-- **flask-cors**: CORS support
-- **sentence-transformers**: Text embeddings
-- **faiss-cpu**: Vector similarity search
-- **pdfplumber**: PDF text extraction
-- **requests**: HTTP library for Groq API calls
+### 1. Smart Greeting Detection
+When users say "Hi", "Hello", etc., the assistant proactively asks if they want to see the resume.
+
+### 2. Resume PDF Card
+Instead of a plain link, the resume appears as a beautiful document card with:
+- PDF icon and filename
+- "Tap to download" description
+- Prominent download button
+
+### 3. Intelligent Question Answering
+The RAG pipeline:
+1. Embeds the user's question using Sentence Transformers
+2. Retrieves top-3 most relevant chunks from FAISS index
+3. Builds a context-aware prompt
+4. Generates a natural answer using Groq's LLM
+
+### 4. Response Cleaning
+Removes verbose phrases like "Based on the context" and "According to the resume" for more natural, concise responses.
+
+## 🔧 Configuration
+
+### Change LLM Model
+
+Edit `backend/serve_models.py`:
+```python
+GROQ_MODEL = "llama-3.1-70b-versatile"  # or any Groq model
+```
+
+### Adjust Retrieval Settings
+
+Edit `backend/rag_utils.py`:
+```python
+# Number of context chunks to retrieve
+contexts = retrieve(question, top_k=3)
+
+# Embedding model
+model = SentenceTransformer("all-MiniLM-L6-v2")
+```
+
+### Adjust Chunking
+
+Edit `backend/index_documents.py`:
+```python
+chunk_size = 300  # Characters per chunk
+overlap = 50      # Overlap between chunks
+```
+
+## 🌐 Deployment
+
+### Deploy to Render
+
+1. Push code to GitHub
+2. Create new Web Service on [Render](https://render.com)
+3. Connect your repository
+4. Render will auto-detect `render.yaml` configuration
+5. Add environment variable: `GROQ_API_KEY`
+6. Deploy!
+
+The app includes:
+- `Procfile` - Gunicorn configuration
+- `render.yaml` - Render deployment config
+- `runtime.txt` - Python version specification
+
+### Environment Variables
+
+Set these in your deployment platform:
+- `GROQ_API_KEY` - Your Groq API key
+- `PORT` - Server port (auto-set by most platforms)
+- `FLASK_ENV` - Set to `production` for production
+
+## 📊 API Usage
+
+### Chat Endpoint
+
+**Request:**
+```bash
+curl -X POST http://localhost:7860/chat \
+  -H "Content-Type: application/json" \
+  -d '{"question": "What are Avinashh'\''s skills?"}'
+```
+
+**Response:**
+```json
+{
+  "answer": "Avinashh has expertise in Python, Machine Learning, NLP..."
+}
+```
+
+**Resume Request Response:**
+```json
+{
+  "answer": "Sure! Here's Lok Avinashh's resume.",
+  "document": {
+    "url": "/resume/T_Lok_Avinashh%20Resume.pdf",
+    "name": "T_Lok_Avinashh Resume.pdf",
+    "type": "PDF"
+  }
+}
+```
 
 ## 🐛 Troubleshooting
 
 ### Server won't start
-- Check if dependencies are installed: `pip install -r requirements.txt`
-- Verify API key is set (environment variable GROQ_API_KEY or in `backend/serve_models.py`)
-- Check if embeddings exist in `embeddings/` folder
+- ✅ Check if virtual environment is activated
+- ✅ Install dependencies: `pip install -r requirements.txt`
+- ✅ Verify `GROQ_API_KEY` is set
+- ✅ Check if embeddings exist in `embeddings/` folder
 
 ### No answers generated
-- Verify Groq API connection: Check `/health` endpoint
-- Check server logs for API errors
-- Ensure documents are indexed
-- Verify you have API credits/quota with Groq (https://console.groq.com)
+- ✅ Check `/health` endpoint for API status
+- ✅ Verify Groq API key is valid
+- ✅ Check server logs for errors
+- ✅ Ensure documents are indexed
+
+### Frontend not loading
+- ✅ Check if React app is built: `npm run build` in `frontend/react-app`
+- ✅ Verify `frontend/static/` contains built files
+- ✅ Clear browser cache
 
 ### Import errors
-- Make sure virtual environment is activated
-- Reinstall dependencies: `pip install -r requirements.txt`
+- ✅ Activate virtual environment
+- ✅ Reinstall dependencies: `pip install -r requirements.txt`
+
+## 📦 Dependencies
+
+### Backend
+- `flask` - Web framework
+- `flask-cors` - CORS support
+- `sentence-transformers` - Text embeddings
+- `faiss-cpu` - Vector similarity search
+- `pdfplumber` - PDF text extraction
+- `requests` - HTTP client for Groq API
+- `gunicorn` - Production WSGI server
+
+### Frontend
+- `react` - UI library
+- `vite` - Build tool
+
+## 🤝 Contributing
+
+This is a personal project, but suggestions and improvements are welcome!
 
 ## 📄 License
 
 This project is for personal/educational use.
 
+## 👨‍💻 Author
+
+**Lok Avinashh**
+
+For questions about this project, feel free to ask the chatbot itself! 😄
+
+---
+
+Made with ❤️ using Flask, React, and Groq AI
