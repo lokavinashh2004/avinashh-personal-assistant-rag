@@ -292,6 +292,69 @@ body {
     margin-bottom: 4px;
 }
 
+.document-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.document-info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.document-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: var(--whatsapp-light-green);
+    color: var(--whatsapp-dark-green);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.document-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.document-name {
+    font-weight: 600;
+    color: var(--whatsapp-dark-text);
+}
+
+.document-desc {
+    font-size: 12px;
+    color: var(--whatsapp-light-text);
+}
+
+.document-download {
+    align-self: flex-start;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: var(--whatsapp-dark-green);
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.document-download:hover {
+    opacity: 0.9;
+}
+
+.document-caption {
+    margin-top: 6px;
+}
+
 .message-time {
     font-size: 11px;
     color: var(--whatsapp-light-text);

@@ -1,5 +1,5 @@
 # backend/api.py
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 import sys
@@ -15,6 +15,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Configure for React build
 REACT_BUILD_DIR = os.path.join(BASE_DIR, 'frontend', 'static')
+RESUME_DIR = os.path.join(BASE_DIR, 'resume')
+RESUME_FILENAME = "T_Lok_Avinashh Resume.pdf"
 
 app = Flask(
     __name__,
@@ -186,8 +188,33 @@ def chat():
         
         if is_greeting:
             # Return a simple, friendly greeting response - no RAG needed
-            answer = "Hi! I'm Lok Avinashh's Personal Assistant. What would you like to know about him?"
+            answer = "Hi! I'm Lok Avinashh's Personal Assistant. Would you like to have a look at his resume?"
             return jsonify({"answer": answer})
+        
+        # Check if user is requesting the resume
+        resume_request_patterns = [
+            'yes', 'yeah', 'sure', 'ok', 'okay', 'yep', 'yup', 'please',
+            'show resume', 'view resume', 'see resume', 'download resume', 
+            'get resume', 'resume', 'cv', 'show cv', 'view cv', 'see cv',
+            'i want to see', 'can i see', 'may i see', 'show me', 
+            'send resume', 'share resume', 'give resume', 'provide resume',
+            'i would like to see', 'id like to see', 'want his resume',
+            'see his resume', 'view his resume', 'show his resume'
+        ]
+        
+        # Check if the question matches any resume request pattern
+        is_resume_request = any(pattern in question_clean for pattern in resume_request_patterns)
+        
+        if is_resume_request:
+            # Return resume as a document object for frontend to display
+            return jsonify({
+                "answer": "Sure! Here's Lok Avinashh's resume.",
+                "document": {
+                    "url": "/resume/T_Lok_Avinashh%20Resume.pdf",
+                    "name": "T_Lok_Avinashh Resume.pdf",
+                    "type": "PDF"
+                }
+            })
         
         # Retrieve relevant contexts for actual questions
         contexts = retrieve(question, top_k=3)
@@ -212,6 +239,18 @@ def health():
         "generator": GENERATOR,
         "service": "RAG Assistant"
     })
+
+@app.route("/resume/<path:filename>", methods=["GET"])
+def serve_resume(filename):
+    """Serve Lok Avinashh's resume PDF."""
+    if filename != RESUME_FILENAME:
+        return jsonify({"error": "File not found"}), 404
+    
+    file_path = os.path.join(RESUME_DIR, filename)
+    if not os.path.isfile(file_path):
+        return jsonify({"error": "File not found"}), 404
+
+    return send_from_directory(RESUME_DIR, filename, mimetype="application/pdf")
 
 @app.route("/<path:path>")
 def serve_static(path):

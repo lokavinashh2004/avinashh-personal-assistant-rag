@@ -1,5 +1,36 @@
 import React from 'react'
 
+function renderMessageContent(message) {
+  if (message.document) {
+    const { url, name, type } = message.document
+    return (
+      <>
+        <div className="document-card">
+          <div className="document-info">
+            <div className="document-icon">{type || 'PDF'}</div>
+            <div className="document-meta">
+              <span className="document-name">{name || 'Resume.pdf'}</span>
+              <span className="document-desc">Tap to download</span>
+            </div>
+          </div>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            download={name || true}
+            className="document-download"
+          >
+            Download
+          </a>
+        </div>
+        <div className="document-caption">{message.content}</div>
+      </>
+    )
+  }
+
+  return message.content
+}
+
 function Message({ message, getCurrentTime }) {
   if (message.isWelcome) {
     return (
@@ -21,7 +52,7 @@ function Message({ message, getCurrentTime }) {
       <div className="message-row">
         <div className="message-bubble">
           <div className="message-content">
-            {message.content}
+            {renderMessageContent(message)}
           </div>
           <div className="message-time">
             {getCurrentTime()}

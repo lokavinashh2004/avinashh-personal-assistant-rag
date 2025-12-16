@@ -6,11 +6,17 @@ import TypingIndicator from './components/TypingIndicator'
 import ConnectionStatus from './components/ConnectionStatus'
 import './App.css'
 
+const RESUME_DOCUMENT = {
+  url: '/resume/T_Lok_Avinashh%20Resume.pdf',
+  name: 'T_Lok_Avinashh Resume.pdf',
+  type: 'PDF'
+}
+
 function App() {
   const [messages, setMessages] = useState([
     {
       id: 'welcome',
-      content: "Hello! 👋\nI'm Lok Avinashh's Personal Assistant. I'm here to help you learn about him. Ask me anything about his resume, skills, experience, or background!",
+      content: "Hello! 👋\nI'm Lok Avinashh's Personal Assistant. Would you like to see his resume? Reply “Yes” and I'll send the PDF, or feel free to ask anything else about him.",
       isSent: false,
       isWelcome: true,
       timestamp: new Date()
@@ -19,6 +25,7 @@ function App() {
   const [isTyping, setIsTyping] = useState(false)
   const [inputEnabled, setInputEnabled] = useState(false)
   const [status, setStatus] = useState({ message: '', type: '' })
+  const [resumeShared, setResumeShared] = useState(false)
   const messagesEndRef = useRef(null)
 
   const scrollToBottom = () => {
@@ -55,10 +62,16 @@ function App() {
     return `${hours}:${minutes}`
   }
 
+  const wantsResume = (messageText) => {
+    const normalized = messageText.trim().toLowerCase()
+    if (!normalized) return false
+    const affirmativeStarts = ['yes', 'yeah', 'yup', 'sure']
+    return affirmativeStarts.some(start => normalized.startsWith(start))
+  }
+
   const sendMessage = async (messageText) => {
     if (!messageText.trim() || !inputEnabled) return
 
-    // Add user message
     const userMessage = {
       id: Date.now().toString(),
       content: messageText,
@@ -66,10 +79,22 @@ function App() {
       timestamp: new Date()
     }
 
-    setMessages(prev => {
-      // Remove welcome message if present
-      return prev.filter(msg => msg.id !== 'welcome').concat(userMessage)
-    })
+    setMessages(prev => prev.filter(msg => msg.id !== 'welcome').concat(userMessage))
+
+    const shouldShareResume = !resumeShared && wantsResume(messageText)
+
+    if (shouldShareResume) {
+      const resumeMessage = {
+        id: `${Date.now()}-resume`,
+        content: "Here's Lok Avinashh's resume. Let me know if you need a summary or have questions!",
+        document: RESUME_DOCUMENT,
+        isSent: false,
+        timestamp: new Date()
+      }
+      setMessages(prev => [...prev, resumeMessage])
+      setResumeShared(true)
+      return
+    }
 
     setInputEnabled(false)
     setIsTyping(true)
@@ -90,6 +115,7 @@ function App() {
         const botMessage = {
           id: (Date.now() + 1).toString(),
           content: data.answer.trim(),
+          document: data.document || null,  // Add document field from backend
           isSent: false,
           timestamp: new Date()
         }
