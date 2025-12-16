@@ -1,6 +1,8 @@
 # backend/rag_utils.py
 import os, json
 import numpy as np
+# NOTE: sentence_transformers and faiss imports are kept at top level for type checking
+# but actual heavy lifting is moved to lazy loader
 from sentence_transformers import SentenceTransformer
 import faiss
 
@@ -10,46 +12,65 @@ INDEX_PATH = os.path.join(BASE, "embeddings", "resume.index")
 META_PATH = os.path.join(BASE, "embeddings", "resume_meta.json")
 
 # ============================================================================
-# MEMORY OPTIMIZATION: Load models once at module import (not per-request)
-# This ensures models are shared across all requests and workers
-# Critical for Render free tier memory limits
+# MEMORY OPTIMIZATION: Singleton Lazy Loading
+# We moved AWAY from module-level globals because they cause OOM at startup
+# before the port opens on Render.
 # ============================================================================
 
-print("🔄 Loading embedding model (one-time at startup)...")
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
-print("✓ Embedding model loaded")
-
-print("🔄 Loading FAISS index...")
-if not os.path.exists(INDEX_PATH):
-    raise FileNotFoundError(f"FAISS index not found at {INDEX_PATH}. Run index_documents.py first.")
-index = faiss.read_index(INDEX_PATH)
-print("✓ FAISS index loaded")
-
-print("🔄 Loading metadata...")
-if not os.path.exists(META_PATH):
-    raise FileNotFoundError(f"Metadata not found at {META_PATH}. Run index_documents.py first.")
-with open(META_PATH, "r", encoding="utf-8") as f:
-    meta = json.load(f)
-print(f"✓ Metadata loaded ({len(meta)} chunks)")
-
-# ============================================================================
-
-def retrieve(query, top_k=2):  # MEMORY OPTIMIZATION: Reduced from 3 to 2
+class RAGComponents:
     """
-    Retrieve relevant contexts using pre-loaded models.
+    Singleton class to hold RAG components.
+    Initialized ONLY when first needed, not at startup.
+    """
+    _instance = None
     
-    MEMORY OPTIMIZATION: Uses module-level globals (loaded once at startup)
-    instead of lazy loading to prevent duplicate loads per worker/request.
+    def __init__(self):
+        print("🔄 Initializing RAG components (Lazy Load)...")
+        
+        # 1. Load Embedding Model
+        print("   - Loading SentenceTransformer...")
+        self.embedder = SentenceTransformer("all-MiniLM-L6-v2")
+        
+        # 2. Load FAISS Index
+        print("   - Loading FAISS index...")
+        if not os.path.exists(INDEX_PATH):
+            raise FileNotFoundError(f"FAISS index not found at {INDEX_PATH}")
+        self.index = faiss.read_index(INDEX_PATH)
+        
+        # 3. Load Metadata
+        print("   - Loading metadata...")
+        if not os.path.exists(META_PATH):
+            raise FileNotFoundError(f"Metadata not found at {META_PATH}")
+        with open(META_PATH, "r", encoding="utf-8") as f:
+            self.meta = json.load(f)
+            
+        print("✓ RAG components ready!")
+
+    @classmethod
+    def get_instance(cls):
+        """Get the singleton instance, creating it if it doesn't exist."""
+        if cls._instance is None:
+            cls._instance = cls()
+        return cls._instance
+
+# ============================================================================
+
+def retrieve(query, top_k=2):  # MEMORY OPTIMIZATION: Keep k=2
     """
-    # Use pre-loaded global models (no initialization here)
-    q_emb = embedder.encode([query], convert_to_numpy=True)
+    Retrieve relevant contexts using lazy-loaded singleton.
+    """
+    # Get singleton instance (loads models if first time)
+    rag = RAGComponents.get_instance()
+    
+    # Use the loaded components
+    q_emb = rag.embedder.encode([query], convert_to_numpy=True)
     faiss.normalize_L2(q_emb)
-    D, I = index.search(q_emb, top_k)
+    D, I = rag.index.search(q_emb, top_k)
     
-    # Collect results without copying
+    # Collect results
     results = []
     for idx in I[0]:
-        results.append(meta[idx])
+        results.append(rag.meta[idx])
     return results
 
 def build_prompt(question, contexts):
