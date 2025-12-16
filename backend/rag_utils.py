@@ -1,54 +1,52 @@
 # backend/rag_utils.py
 import os, json
 import numpy as np
-from functools import lru_cache
+from sentence_transformers import SentenceTransformer
+import faiss
 
 # Path relative to project root (2 levels up from backend/)
 BASE = os.path.join(os.path.dirname(__file__), "..")
 INDEX_PATH = os.path.join(BASE, "embeddings", "resume.index")
 META_PATH = os.path.join(BASE, "embeddings", "resume_meta.json")
 
-# Lazy loading functions - models only load when first called
-@lru_cache(maxsize=1)
-def get_embedder():
-    """Lazy load the embedding model only when needed."""
-    from sentence_transformers import SentenceTransformer
-    print("Loading embedding model (first time only)...")
-    return SentenceTransformer("all-MiniLM-L6-v2")
+# ============================================================================
+# MEMORY OPTIMIZATION: Load models once at module import (not per-request)
+# This ensures models are shared across all requests and workers
+# Critical for Render free tier memory limits
+# ============================================================================
 
-@lru_cache(maxsize=1)
-def get_index():
-    """Lazy load the FAISS index only when needed."""
-    import faiss
-    print("Loading FAISS index (first time only)...")
-    if not os.path.exists(INDEX_PATH):
-        raise FileNotFoundError(f"FAISS index not found at {INDEX_PATH}. Run index_documents.py first.")
-    return faiss.read_index(INDEX_PATH)
+print("🔄 Loading embedding model (one-time at startup)...")
+embedder = SentenceTransformer("all-MiniLM-L6-v2")
+print("✓ Embedding model loaded")
 
-@lru_cache(maxsize=1)
-def get_meta():
-    """Lazy load the metadata only when needed."""
-    print("Loading metadata (first time only)...")
-    if not os.path.exists(META_PATH):
-        raise FileNotFoundError(f"Metadata not found at {META_PATH}. Run index_documents.py first.")
-    with open(META_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+print("🔄 Loading FAISS index...")
+if not os.path.exists(INDEX_PATH):
+    raise FileNotFoundError(f"FAISS index not found at {INDEX_PATH}. Run index_documents.py first.")
+index = faiss.read_index(INDEX_PATH)
+print("✓ FAISS index loaded")
 
-def retrieve(query, top_k=3):
-    """Retrieve relevant contexts using lazy-loaded models."""
-    import faiss
+print("🔄 Loading metadata...")
+if not os.path.exists(META_PATH):
+    raise FileNotFoundError(f"Metadata not found at {META_PATH}. Run index_documents.py first.")
+with open(META_PATH, "r", encoding="utf-8") as f:
+    meta = json.load(f)
+print(f"✓ Metadata loaded ({len(meta)} chunks)")
+
+# ============================================================================
+
+def retrieve(query, top_k=2):  # MEMORY OPTIMIZATION: Reduced from 3 to 2
+    """
+    Retrieve relevant contexts using pre-loaded models.
     
-    # Get models (will load on first call, then cached)
-    embedder = get_embedder()
-    index = get_index()
-    meta = get_meta()
-    
-    # Encode query and search
+    MEMORY OPTIMIZATION: Uses module-level globals (loaded once at startup)
+    instead of lazy loading to prevent duplicate loads per worker/request.
+    """
+    # Use pre-loaded global models (no initialization here)
     q_emb = embedder.encode([query], convert_to_numpy=True)
     faiss.normalize_L2(q_emb)
     D, I = index.search(q_emb, top_k)
     
-    # Collect results
+    # Collect results without copying
     results = []
     for idx in I[0]:
         results.append(meta[idx])

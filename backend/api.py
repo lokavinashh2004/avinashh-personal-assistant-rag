@@ -27,6 +27,21 @@ app = Flask(
 # Enable CORS for all routes (useful if you want to access from different origins)
 CORS(app)
 
+# ============================================================================
+# MEMORY OPTIMIZATION: Rate limiting to prevent iframe reload spikes
+# Protects against memory exhaustion from request bursts
+# ============================================================================
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+
+limiter = Limiter(
+    app=app,
+    key_func=get_remote_address,
+    default_limits=["30 per minute"],  # Global limit
+    storage_uri="memory://"  # Use in-memory storage (no Redis needed)
+)
+# ============================================================================
+
 # Use Grok as the generator
 GENERATOR = "grok"
 
@@ -159,6 +174,7 @@ def clean_response(text):
     return text
 
 @app.route("/chat", methods=["POST"])
+@limiter.limit("10 per minute")  # MEMORY OPTIMIZATION: Protect against iframe reload spikes
 def chat():
     """Handle chat requests"""
     data = request.json
@@ -192,7 +208,8 @@ def chat():
             return jsonify({"answer": answer})
         
         # Retrieve relevant contexts for actual questions
-        contexts = retrieve(question, top_k=3)
+        # MEMORY OPTIMIZATION: Reduced from top_k=3 to top_k=2
+        contexts = retrieve(question, top_k=2)
         prompt = build_prompt(question, contexts)
 
         # Generate answer using Grok
