@@ -2,11 +2,6 @@
 
 A modern, intelligent personal assistant powered by Retrieval-Augmented Generation (RAG) that answers questions about Lok Avinashh's professional background, skills, and experience. Built with Flask, React, and Groq AI.
 
-![WhatsApp-Style Chat Interface](https://img.shields.io/badge/UI-WhatsApp_Style-25D366?style=for-the-badge&logo=whatsapp)
-![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Flask](https://img.shields.io/badge/Flask-2.0+-000000?style=for-the-badge&logo=flask&logoColor=white)
-
 ## ✨ Features
 
 - 💬 **WhatsApp-Style Chat Interface** - Modern, responsive UI with real-time messaging
@@ -67,9 +62,9 @@ avinash-personal-assistant-rag/
 
 ### Prerequisites
 
-- **Python 3.8+** ([Download](https://www.python.org/downloads/))
+- **Python 3.8+** 
 - **Node.js 16+** (for frontend development)
-- **Groq API Key** ([Get one free](https://console.groq.com))
+- **Groq API Key** 
 
 ### Installation
 
