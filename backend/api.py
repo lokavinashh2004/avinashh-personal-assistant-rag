@@ -188,33 +188,8 @@ def chat():
         
         if is_greeting:
             # Return a simple, friendly greeting response - no RAG needed
-            answer = "Hi! I'm Lok Avinashh's Personal Assistant. Would you like to have a look at his resume?"
+            answer = "Hi! I'm Lok Avinashh's Personal Assistant. What would you like to know about him?"
             return jsonify({"answer": answer})
-        
-        # Check if user is requesting the resume
-        resume_request_patterns = [
-            'yes', 'yeah', 'sure', 'ok', 'okay', 'yep', 'yup', 'please',
-            'show resume', 'view resume', 'see resume', 'download resume', 
-            'get resume', 'resume', 'cv', 'show cv', 'view cv', 'see cv',
-            'i want to see', 'can i see', 'may i see', 'show me', 
-            'send resume', 'share resume', 'give resume', 'provide resume',
-            'i would like to see', 'id like to see', 'want his resume',
-            'see his resume', 'view his resume', 'show his resume'
-        ]
-        
-        # Check if the question matches any resume request pattern
-        is_resume_request = any(pattern in question_clean for pattern in resume_request_patterns)
-        
-        if is_resume_request:
-            # Return resume as a document object for frontend to display
-            return jsonify({
-                "answer": "Sure! Here's Lok Avinashh's resume.",
-                "document": {
-                    "url": "/resume/T_Lok_Avinashh%20Resume.pdf",
-                    "name": "T_Lok_Avinashh Resume.pdf",
-                    "type": "PDF"
-                }
-            })
         
         # Retrieve relevant contexts for actual questions
         contexts = retrieve(question, top_k=3)

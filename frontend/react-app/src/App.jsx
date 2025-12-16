@@ -115,7 +115,6 @@ function App() {
         const botMessage = {
           id: (Date.now() + 1).toString(),
           content: data.answer.trim(),
-          document: data.document || null,  // Add document field from backend
           isSent: false,
           timestamp: new Date()
         }

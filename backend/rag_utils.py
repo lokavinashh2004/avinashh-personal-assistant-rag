@@ -1,23 +1,54 @@
 # backend/rag_utils.py
 import os, json
 import numpy as np
-from sentence_transformers import SentenceTransformer
-import faiss
+from functools import lru_cache
 
 # Path relative to project root (2 levels up from backend/)
 BASE = os.path.join(os.path.dirname(__file__), "..")
 INDEX_PATH = os.path.join(BASE, "embeddings", "resume.index")
 META_PATH = os.path.join(BASE, "embeddings", "resume_meta.json")
 
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
-index = faiss.read_index(INDEX_PATH)
-with open(META_PATH, "r", encoding="utf-8") as f:
-    meta = json.load(f)
+# Lazy loading functions - models only load when first called
+@lru_cache(maxsize=1)
+def get_embedder():
+    """Lazy load the embedding model only when needed."""
+    from sentence_transformers import SentenceTransformer
+    print("Loading embedding model (first time only)...")
+    return SentenceTransformer("all-MiniLM-L6-v2")
+
+@lru_cache(maxsize=1)
+def get_index():
+    """Lazy load the FAISS index only when needed."""
+    import faiss
+    print("Loading FAISS index (first time only)...")
+    if not os.path.exists(INDEX_PATH):
+        raise FileNotFoundError(f"FAISS index not found at {INDEX_PATH}. Run index_documents.py first.")
+    return faiss.read_index(INDEX_PATH)
+
+@lru_cache(maxsize=1)
+def get_meta():
+    """Lazy load the metadata only when needed."""
+    print("Loading metadata (first time only)...")
+    if not os.path.exists(META_PATH):
+        raise FileNotFoundError(f"Metadata not found at {META_PATH}. Run index_documents.py first.")
+    with open(META_PATH, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 def retrieve(query, top_k=3):
+    """Retrieve relevant contexts using lazy-loaded models."""
+    import faiss
+    
+    # Get models (will load on first call, then cached)
+    embedder = get_embedder()
+    index = get_index()
+    meta = get_meta()
+    
+    # Encode query and search
     q_emb = embedder.encode([query], convert_to_numpy=True)
     faiss.normalize_L2(q_emb)
     D, I = index.search(q_emb, top_k)
+    
+    # Collect results
     results = []
     for idx in I[0]:
         results.append(meta[idx])
